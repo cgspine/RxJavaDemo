@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion parent.ext.androidCompileSdkVersion
+    buildToolsVersion parent.ext.androidBuildToolsVersion
+
+    defaultConfig {
+        applicationId parent.ext.androidApplicationId
+        minSdkVersion parent.ext.androidMinSdkVersion
+        targetSdkVersion parent.ext.androidTargetSdkVersion
+        versionCode parent.ext.androidVersionCode
+        versionName parent.ext.androidVersionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:$supportVersion"
+    compile "com.android.support:design:$supportVersion"
+    compile "io.reactivex:rxjava:$rxJavaVersion"
+    compile "io.reactivex:rxandroid:$rxJavaVersion"
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$gsonVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava:$gsonVersion"
+}
