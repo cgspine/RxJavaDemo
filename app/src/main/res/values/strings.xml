@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">RxJavaDemo</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_rxjava_helloworld">RxjavaHelloworld</string>
-    <string name="title_activity_gank">GankActivity</string>
+    <string name="title_activity_handler">Handler图片下载</string>
+    <string name="title_activity_async_task">AsyncTask图片下载</string>
+    <string name="title_activity_rxjava">RxJava列表</string>
+    <string name="title_activity_rxjava_download">RxJava图片下载</string>
 </resources>

@@ -20,16 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.HandlerActivity"/>
-        <activity android:name=".activities.AsyncTaskActivity"/>
         <activity
-            android:name=".activities.RxjavaHelloworldActivity"
-            android:label="@string/title_activity_rxjava_helloworld"
+            android:name=".activities.HandlerActivity"
+            android:label="@string/title_activity_handler"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.AsyncTaskActivity"
+            android:label="@string/title_activity_async_task"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.RxjavaDownloadActivity"
+            android:label="@string/title_activity_rxjava_download"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".activities.GankActivity"
-            android:label="@string/title_activity_gank"
+            android:name=".activities.RxJavaActivity"
+            android:label="@string/title_activity_rxjava"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
